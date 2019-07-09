@@ -15,10 +15,13 @@ import org.springframework.http.ResponseEntity;
 import br.uff.qet.configuration.UserConfiguration;
 import br.uff.qet.controller.UserController;
 import br.uff.qet.model.User;
+import br.uff.qet.service.UserService;
 import br.uff.qet.service.UserServiceImpl;
 
 
 public class CadastroCobertura {
+	
+	
 	
 	@Test
 	public void testarCadastro(){
@@ -53,14 +56,17 @@ public class CadastroCobertura {
 		
 		ranking.get(ranking
 				.indexOf(service
-				.findByEmail(usuarioSegundo.getEmail())))
+				.findByEmail(usuarioPrimeiro.getEmail())))
 				.setEmail("buzzbuzz@gmail.com");
 		
-		assertEquals("fizz@email.com", ranking.get(0).getEmail());
+		service.updateUser(ranking.get(ranking.indexOf(service.findByEmail(usuarioPrimeiro.getEmail()))));
+		
+		
+		assertEquals("buzzbuzz@gmail.com", ranking.get(0).getEmail());
 	}
 	
 	//@Test
 	public void testarEdicoes() {
-	
+		
 	}
 }
