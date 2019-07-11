@@ -1,6 +1,7 @@
 package br.uff.qet.service;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
@@ -81,6 +82,16 @@ public class UserServiceImpl implements UserService {
 	
 	public void deleteAllUsers() {
 		users.clear();
+	}
+	
+	public List<User> buildUserRanking() {
+		if(users == null) {
+			return null;
+		}else {
+				users.sort(Comparator.comparingDouble(User:: getPontos)
+				.reversed());
+		}
+		return users;
 	}
 
 	@Override

@@ -138,6 +138,26 @@
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>3.1.0</version>
 				</plugin>
+				<plugin>
+					<groupId>org.pitest</groupId>
+					<artifactId>pitest-maven</artifactId>
+					<version>LATEST</version>
+					<configuration>
+						<targetClasses>
+							<param>br.uff.qet.service.UserServiceImpl</param>
+							<param>br.uff.qet.model.User</param>
+						</targetClasses>
+						<targetTests>
+							<param>br.uff.qet.test.CadastrosMutantes</param>
+						</targetTests>
+						<mutators>
+							<mutator>CONSTRUCTOR_CALLS</mutator>
+							<mutator>VOID_METHOD_CALLS</mutator>
+							<mutator>RETURN_VALS</mutator>
+							<mutator>NON_VOID_METHOD_CALLS</mutator>
+						</mutators>
+					</configuration>
+				</plugin>
 				<!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
