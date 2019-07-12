@@ -77,6 +77,14 @@ public class UserServiceImpl implements UserService {
 	private static List<User> populate() {
 		List<User> users = new ArrayList<User>();
 		users.add(new User(counter.incrementAndGet(), "admin@email.com", 8000, "admin", "admin"));
+		users.add(new User(counter.incrementAndGet(), "riffs@rmail.com", 8500, "riffs", "ffff"));
+		users.add(new User(counter.incrementAndGet(), "buzz@email.com", 4000, "buzz", "buzz"));
+		users.add(new User(counter.incrementAndGet(), "fizz@email.com", 5000, "fizz", "fizz"));
+		users.add(new User(counter.incrementAndGet(), "zucs@email.com", 87000, "zucs", "zucs"));
+		users.add(new User(counter.incrementAndGet(), "klemm@email.com", 8000, "klemm", "klemm"));
+		users.add(new User(counter.incrementAndGet(), "oopas@email.com", 1000, "oopas", "oopas"));
+		users.add(new User(counter.incrementAndGet(), "qquu@email.com", 8300, "qquu", "qquu"));
+		users.add(new User(counter.incrementAndGet(), "zebraz@email.com",48000, "zebraz", "zebraz"));
 		return users;
 	}
 	
