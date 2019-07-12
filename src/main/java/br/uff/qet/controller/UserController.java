@@ -29,7 +29,7 @@ public class UserController {
 	
 	@RequestMapping(value = "/user/", method= RequestMethod.GET)
 	public ResponseEntity<List<User>> listAllUsers() {
-		List<User> users = userService.findAllUsers();
+		List<User> users = userService.buildUserRanking();
 		if(users.isEmpty()) {
 			return new ResponseEntity<List<User>>(HttpStatus.NO_CONTENT);
 		}
