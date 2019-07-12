@@ -1,29 +1,23 @@
 package br.uff.qet.test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.LinkedHashMap;
-import java.util.List;
 
-import javax.servlet.ServletContext;
 
 import org.junit.Test;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.client.RestTemplate;
+
 
 import br.uff.qet.configuration.CORSFilter;
 import br.uff.qet.configuration.UserConfiguration;
 import br.uff.qet.configuration.UserInitializer;
 import br.uff.qet.controller.UserController;
 import br.uff.qet.model.User;
-import br.uff.qet.service.UserService;
 import br.uff.qet.service.UserServiceImpl;
 
 
@@ -163,7 +157,6 @@ public class CadastroCoberturaUnitario {
 		UserController controller = new UserController();
 		controller.getClass();
 		controller.hashCode();
-		UserService service;
 		assertNull(controller.updateUser(0, new User(0,"admin@email.com", 89000, "admin", "admin")));
 	}
 	

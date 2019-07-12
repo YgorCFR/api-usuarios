@@ -1,0 +1,686 @@
+{
+	"info": {
+		"_postman_id": "2aefe09a-1f11-4c26-b04e-7e23b48f9ff2",
+		"name": "Api Usuários",
+		"description": "# Introduction\nWhat does your API do?\nAPI de gerenciamento de usuários\n\n# Overview\nThings that the developers should know about\nApi que cria, edita, lista, acessa e deleta usuários.\n\n# Authentication\nWhat is the preferred way of using the API?\nEsta API deve ser usada de maneira preferível com uma interface desacoplada.\n\n# Error Codes\nWhat errors and status codes can a user expect?\n404, 409, 204\n\n# Rate limit\nIs there a limit to the number of requests an user can send?\nPrecisa ser testado.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/ApiCadastros/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": String, \"senha\": String}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiCadastros/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiCadastros",
+						"login",
+						""
+					]
+				},
+				"description": "Realizar login de usuário"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\": String, \"senha\": String}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/ApiCadastros/login/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ApiCadastros",
+								"login",
+								""
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "OK"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/ApiCadastros/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": String, \"senha\": String}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiCadastros/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiCadastros",
+						"login",
+						""
+					]
+				},
+				"description": "Registro não encontrado"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\": String, \"senha\": String}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/ApiCadastros/login/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ApiCadastros",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "Not Found"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/ApiCadastros/user/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiCadastros/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiCadastros",
+						"user",
+						""
+					]
+				},
+				"description": "Listar todos os usuários"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/ApiCadastros/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ApiCadastros",
+								"user",
+								""
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "OK"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/ApiCadastros/user/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiCadastros/user/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiCadastros",
+						"user",
+						"{id}"
+					]
+				},
+				"description": "Buscar um usuário por id"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/ApiCadastros/user/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ApiCadastros",
+								"user",
+								"{id}"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "OK"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/ApiCadastros/user/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiCadastros/user/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiCadastros",
+						"user",
+						"{id}"
+					]
+				},
+				"description": "Buscar um usuário por id não correspondente"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/ApiCadastros/user/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ApiCadastros",
+								"user",
+								"{id}"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "No Content"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/ApiCadastros/user/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": String, \"pontos\": double, \"senha\": String, \"nome\": String}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiCadastros/user/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiCadastros",
+						"user",
+						"{id}"
+					]
+				},
+				"description": "Editar um usuário por id"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\": String, \"pontos\": double, \"senha\": String, \"nome\": String}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/ApiCadastros/user/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ApiCadastros",
+								"user",
+								"{id}"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "OK"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/ApiCadastros/user/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": String, \"pontos\": double, \"senha\": String, \"nome\": String}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiCadastros/user/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiCadastros",
+						"user",
+						"{id}"
+					]
+				},
+				"description": "Usuário não encontrado"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\": String, \"pontos\": double, \"senha\": String, \"nome\": String}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/ApiCadastros/user/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ApiCadastros",
+								"user",
+								"{id}"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "Not Found"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/ApiCadastros/user/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": String, \"pontos\": double, \"senha\": String, \"nome\": String}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiCadastros/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiCadastros",
+						"user",
+						""
+					]
+				},
+				"description": "Criar usuário"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\": String, \"pontos\": double, \"senha\": String, \"nome\": String}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/ApiCadastros/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ApiCadastros",
+								"user",
+								""
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "OK"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/ApiCadastros/user/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": String, \"pontos\": double, \"senha\": String, \"nome\": String}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiCadastros/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiCadastros",
+						"user",
+						""
+					]
+				},
+				"description": "Já existe um usuário com esses dados"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\": String, \"pontos\": double, \"senha\": String, \"nome\": String}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/ApiCadastros/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ApiCadastros",
+								"user",
+								""
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "Conflict"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/ApiCadastros/user/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiCadastros/user/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiCadastros",
+						"user",
+						"{id}"
+					]
+				},
+				"description": "Deletar um usuário por id"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/ApiCadastros/user/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ApiCadastros",
+								"user",
+								"{id}"
+							]
+						}
+					},
+					"code": 204,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "No Content"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/ApiCadastros/user/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiCadastros/user/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiCadastros",
+						"user",
+						"{id}"
+					]
+				},
+				"description": "Usuário não encontrado"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/ApiCadastros/user/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ApiCadastros",
+								"user",
+								"{id}"
+							]
+						}
+					},
+					"code": 404,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "Not Found"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/ApiCadastros/user/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiCadastros/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiCadastros",
+						"user",
+						""
+					]
+				},
+				"description": "Deletar todos os usuários"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/ApiCadastros/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ApiCadastros",
+								"user",
+								""
+							]
+						}
+					},
+					"code": 204,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "No Content"
+				}
+			]
+		}
+	]
+}

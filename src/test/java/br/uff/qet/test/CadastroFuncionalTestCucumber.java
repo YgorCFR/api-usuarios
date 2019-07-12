@@ -12,6 +12,6 @@ import cucumber.api.junit.Cucumber;
 		,glue = "stepDefinition"
 		,format = {"pretty"}
 		)
-public class CadastroRunner {
+public class CadastroFuncionalTestCucumber {
 	
 }
