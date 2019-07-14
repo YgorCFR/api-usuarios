@@ -5,11 +5,12 @@ Api com dados em memória que simula gerenciamento de usuários
 link para documentação:
 https://documenter.getpostman.com/view/4765208/SVSBxD1o
 
+```
 Observações:
 - Projeto deve ser executado de preferência no eclipse.
 - É uma Rest API com dados fictícios
 - Possui os seguintes scripts de teste:
-  
+```  
   ## Testes unitários e de cobertura  
     Sendo necessário Instalar a ferramenta Eclemma no Eclipse. A realização dele se dá 
     pelo arquivo CadastroCoberturaUnitario.java, localizado no pacote br.uff.qet.test .
